@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var basicLable: UILabel!
     @IBAction func changeLable(_ sender: Any) {
@@ -46,6 +46,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     
+    
+    
+    //---------------------------------------------------------------------------
+    // UITableViewDelegate - implementation
+    //---------------------------------------------------------------------------
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("TableView on item \(indexPath.row) click")
+    }
+    
+    
+    
     let dayliTasks = ["Check all windows",
                       "Check all doors",
                       "Is the boiler fueled?",
@@ -62,9 +73,9 @@ class ViewController: UIViewController, UITableViewDataSource {
                         "Test motion detector",
                         "Test smoke alarms"]
     
-    //-----------------------------------------------------------------------------------
+    //---------------------------------------------------------------------------
     // UITableViewDataSource - implementation
-    //-----------------------------------------------------------------------------------
+    //---------------------------------------------------------------------------
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         switch section {
@@ -82,16 +93,29 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell", for: indexPath)
+        
         cell.textLabel?.text = "This is the \(indexPath.row)"
         
         switch indexPath.section {
         case 0:
             cell.textLabel?.text = dayliTasks[indexPath.row]
+            cell.imageView?.image = #imageLiteral(resourceName: "clock")
+            cell.accessoryType = .disclosureIndicator
+            cell.detailTextLabel?.text = "This is some detailse"
+            
+            
         case 1:
             cell.textLabel?.text = weeklyTasks[indexPath.row]
+            cell.imageView?.image = nil
+            cell.accessoryType = .detailButton
+            cell.detailTextLabel?.text = nil
         case 2:
             cell.textLabel?.text = monthlyTasks[indexPath.row]
+            cell.imageView?.image = nil
+            cell.accessoryType = .none
+            cell.detailTextLabel?.text = nil
         default:
             cell.textLabel?.text = "This shouldn't happen"
         }
