@@ -52,10 +52,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // UITableViewDelegate - implementation
     //---------------------------------------------------------------------------
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("TableView on item \(indexPath.row) click")
+        print("TableView on item of section: \(indexPath.section) row: \(indexPath.row) click")
     }
-    
-    
     
     let dayliTasks = ["Check all windows",
                       "Check all doors",
