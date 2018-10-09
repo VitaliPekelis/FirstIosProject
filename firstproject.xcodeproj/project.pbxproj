@@ -12,6 +12,10 @@
 		F823D16D2133C05A007F3F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F823D16B2133C05A007F3F2F /* Main.storyboard */; };
 		F823D16F2133C05B007F3F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F823D16E2133C05B007F3F2F /* Assets.xcassets */; };
 		F823D1722133C05B007F3F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F823D1702133C05B007F3F2F /* LaunchScreen.storyboard */; };
+		F866BD5A216CD038006E6BAD /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866BD59216CD038006E6BAD /* SecondScreenViewController.swift */; };
+		F866BD5C216CD175006E6BAD /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866BD5B216CD175006E6BAD /* ThirdViewController.swift */; };
+		F866BD5E216CE2E9006E6BAD /* FirstItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866BD5D216CE2E9006E6BAD /* FirstItemViewController.swift */; };
+		F866BD60216CE393006E6BAD /* SecondItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866BD5F216CE393006E6BAD /* SecondItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F823D16E2133C05B007F3F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F823D1712133C05B007F3F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F823D1732133C05B007F3F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F866BD59216CD038006E6BAD /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		F866BD5B216CD175006E6BAD /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F866BD5D216CE2E9006E6BAD /* FirstItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstItemViewController.swift; sourceTree = "<group>"; };
+		F866BD5F216CE393006E6BAD /* SecondItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,13 @@
 				F823D1672133C05A007F3F2F /* AppDelegate.swift */,
 				F823D1692133C05A007F3F2F /* ViewController.swift */,
 				F823D16B2133C05A007F3F2F /* Main.storyboard */,
+				F866BD5D216CE2E9006E6BAD /* FirstItemViewController.swift */,
+				F866BD5F216CE393006E6BAD /* SecondItemViewController.swift */,
+				F866BD5B216CD175006E6BAD /* ThirdViewController.swift */,
 				F823D16E2133C05B007F3F2F /* Assets.xcassets */,
 				F823D1702133C05B007F3F2F /* LaunchScreen.storyboard */,
 				F823D1732133C05B007F3F2F /* Info.plist */,
+				F866BD59216CD038006E6BAD /* SecondScreenViewController.swift */,
 			);
 			path = firstproject;
 			sourceTree = "<group>";
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F866BD5A216CD038006E6BAD /* SecondScreenViewController.swift in Sources */,
 				F823D16A2133C05A007F3F2F /* ViewController.swift in Sources */,
+				F866BD5E216CE2E9006E6BAD /* FirstItemViewController.swift in Sources */,
+				F866BD5C216CD175006E6BAD /* ThirdViewController.swift in Sources */,
 				F823D1682133C05A007F3F2F /* AppDelegate.swift in Sources */,
+				F866BD60216CE393006E6BAD /* SecondItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
